@@ -1,0 +1,32 @@
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+  
+}
+nav ul li{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 35px;
+}
+/* Banner  */
+.banner{
+    display: flex;
+}
+.navbar, .banner{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.banner-content{
+    justify-content: center;
+    max-width: 570px;
+    max-height: 300px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
