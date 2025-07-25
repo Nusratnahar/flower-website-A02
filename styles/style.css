@@ -56,6 +56,14 @@
     list-style: disc;
     margin-left: 20px;
 }
+
+.input-title{
+    color: #FFFFFF;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
 /* hover effect */
 .card:hover{
     transform: scale(1.05);
@@ -209,7 +217,7 @@ nav ul li{
     left: 160px;
     top: 110px;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
     color: #FFFFFF;
 }
 .zabo-text p{
@@ -217,6 +225,7 @@ nav ul li{
 }
 .deal-text a , .zabo-text a{
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 
@@ -225,7 +234,7 @@ nav ul li{
     background-image: url(/assets/news-letter-bg.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 330px; 
+    height: 530px; 
     background-size: cover;
     text-align: center;
     padding-top: 250px;
@@ -239,15 +248,15 @@ nav ul li{
 }
 .subscribe-field input[type="email"]{
     width: 530px;
-    height: 30px;
+    height: 35px;
     font-size: 1rem;
     border: none;
     padding-left: 10px;
+    background-color: #FFFFFF;
 }
 .subscribe-field button {
     width: 180px;
-  padding: 6px 10px;
-  height: 30px;
+  height: 35px;
   background-color: #E95A08;
   color: white;
   font-size: 1rem;
@@ -263,10 +272,12 @@ nav ul li{
 }
 .website-info{
     width: 350px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .website-links{
     display: flex;
-    justify-content: space-around;
+    gap: 60px;
     
 }
 .website-links ul li{
