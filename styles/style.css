@@ -300,6 +300,7 @@ nav ul li{
     }
     .banner{
         flex-direction: column-reverse;
+        margin: 20px;
     }
     .banner-content{
         margin-top: 28px;
@@ -316,7 +317,7 @@ nav ul li{
     }
     .flower-plants-container{
         flex-direction: column;
-        margin-top: 40px;
+        margin: 20px 40px;
     }
     .flower-plants-content{
         width: 360px;
@@ -330,15 +331,20 @@ nav ul li{
         margin: 10px;
     } 
     .deals-section img{
-        width: 360px;
+        width: 100%;
+    max-width: 360px;
     }
     .zabo-text{
         font-size: 2rem;
         top: 50px;
         left: 25px;
     }
+    .subscribe-field input[type="email"],
+  .subscribe-field button {
+    width: 90%;
+  }
     .footer-section, .website-links{
         flex-direction: column;
-}
+  }
 
 }
