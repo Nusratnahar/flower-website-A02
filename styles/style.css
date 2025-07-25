@@ -68,8 +68,86 @@ nav ul li{
     height: 50px;
     border: none;
 }
+/* Flower-plants section styles */
 
+.flower-plants-container{
+    display: flex;
+    margin: 200px 150px; 
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    
+}
+.flower-plants-img{
+    position: relative;
+}
+.flower-plants-img img{
+    width: 100%; 
+} 
+#badge{
+    width: 180px;
+   position: absolute;
+   top: -80px;
+   right:-60px;
+  z-index: 2; 
+  transition: transform 0.5s ease ;
+}
+#badge:hover{
+    transform: rotate(360deg);
+  
+}
+/* deals-section-styles */
+.latest-deals{
+    margin: 130px 150px;
+    text-align: center;
+}
+.deals-section{
+    display: flex;
+    gap: 30px;
+    max-width: 1140px;
+    margin-top: 80px;
 
+}
+.deals-section img{
+    width: 100%;
+    margin-top: 15px;
+}
+.left-img img{
+    border-radius: 14px;
+
+}
+.zabo-plant img{
+    border-radius: 22px;
+}
+.boom-plant, .ana-plant, .zabo-plant{
+    position: relative;
+}
+.deal-text{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+.zabo-text{
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 160px;
+    top: 110px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.zabo-text p{
+    margin-bottom: 0;
+}
+.deal-text a , .zabo-text a{
+    color: #FFFFFF;
+}
 @media screen and (max-width:576px){
     .nav-item{
         display: none;
@@ -87,4 +165,31 @@ nav ul li{
     .section-description{
         margin: 10px 20px;
     }
+    #badge{
+        display: none;
+    }
+    .flower-plants-container{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .flower-plants-content{
+        width: 360px;
+        margin: 50px 20px;
+    }
+    .flower-plants-img img{
+    width: 340px; 
+    }
+    .deals-section{
+        flex-direction: column-reverse;
+        margin: 10px;
+    } 
+    .deals-section img{
+        width: 360px;
+    }
+    .zabo-text{
+        font-size: 2rem;
+        top: 50px;
+        left: 25px;
+    }
+
 }
