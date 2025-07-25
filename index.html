@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faugei Website</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/451c4dccbd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar inter">
             <img src="assets/logo.png" alt="" class="logo">
-            <ul class="nav-links">
-                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <ul class="nav-links ">
+                <li class="nav-item"><a href="" class="nav-link font-bold ">Home</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
                 <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
                 <li class="cart"><a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
@@ -20,8 +24,8 @@
         </nav>
         <section class="banner">
             <div class="banner-content">
-                <h1 class="banner-title">ALWAYS FRESH <br>FLOWERS</h1>
-                <p class="banner-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+                <h1 class="banner-title noto-serif">ALWAYS<span class="primary-clr"> FRESH <br>FLOWERS</span></h1>
+                <p class="banner-description inter secondary-clr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
             </div>
             <div class="banner-img">
                 <img src="assets/hero-flower.png" alt="">
@@ -30,9 +34,9 @@
     </header>
     <main>
         <section class="flower-cards">
-            <h3 class="section-title">Our Plants</h3>
-            <p class="section-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-            <div class="cards">
+            <h3 class="section-title noto-serif"> <span class="primary-clr"> Our</span> Plants</h3>
+            <p class="section-description inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="cards inter">
                 <div class="card">
                     <img src="assets/sample-flower-image.png" alt="">
                     <h3 class="card-title">Lily Blossom</h3>
@@ -90,8 +94,8 @@
                 <img id="badge" src="assets/trusted-badge.png" alt="">
             </div>
             <div class="flower-plants-content">
-                <h1 class="flower-plants-title">Flower & Plants Lover</h1>
-                <ul>
+                <h1 class="flower-plants-title noto-serif">Flower & Plants <br> Lover</h1>
+                <ul class="inter secondary-clr">
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -99,9 +103,9 @@
             </div>
         </section>
         <section class="latest-deals">
-            <h3 class="section-title">Latest  Deals</h3>
-            <p class="section-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-            <div class="deals-section">
+            <h3 class="section-title noto-serif"><span class="primary-clr"> Latest</span>  Deals</h3>
+            <p class="section-description inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="deals-section noto-serif">
                 <div class="left-img">
                 <div class="boom-plant">
                     <img src="assets/deal-bloom.png" alt="">
@@ -128,9 +132,47 @@
 
             </div>
         </section>
+        <section class="input-section">
+            <h3 class="input-title">Join the colorful Bunch</h3>
+            <div class="subscribe-field">
+                <input type="email" name="" id="" placeholder="Write email">
+                <button>Subscribe</button>
+            </div>
+        </section>
     </main>
-    <main>
-
-    </main>
+  <footer>
+<section class="footer-section">
+    <div class="website-info">
+        <img src="assets/logo.png" alt="">
+        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.From timeless roses to rare exotic blooms, we offer nature’s best at your fingertips. </p>
+    </div>
+    <div class="website-links">
+        <div>
+        <ul class="links">
+            <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Contact-us</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="links">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Help Center</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="website-social-links">
+        <img src="assets/icon-linkedin.png" alt="">
+        <img src="assets/icon-twitter.png" alt="">
+        <img src="assets/icon-facebook.png" alt="">
+        <img src="assets/icon-youtube.png" alt="">
+    </div>
+</section>
+  </footer>
 </body>
 </html>

@@ -1,3 +1,71 @@
+
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.primary-clr{
+    color: #E95A08;
+}
+.secondary-clr{
+    color: rgba(0, 0, 0, 0.5);
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+} 
+.banner-description{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight:700 ;
+}
+.section-description{
+    ont-size: 1.2rem;
+    font-weight:400 ;
+    color: rgba(0, 0, 0, 0.5);
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card-number{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.flower-plants-title{
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+.flower-plants-content li{
+    list-style: disc;
+    margin-left: 20px;
+}
+/* hover effect */
+.card:hover{
+    transform: scale(1.05);
+}
+.btn-primary:hover{
+    background-color: #FFFFFF;
+    border: 2px solid #E95A08;
+    color: #E95A08;
+}
+
 /* Navbar Styles */
 .navbar{
     display: flex;
@@ -7,22 +75,24 @@
 }
 nav ul li{
     list-style: none;
+    
 }
 .nav-links{
-    display: flex;
-    
-    
+    display: flex; 
 }
+
 .nav-link{
     text-decoration: none;
     margin-right: 35px;
+     color: #252432;
 }
 
 /* Banner  */
 .banner{
     display: flex;
+    margin: 160px;
 }
-.navbar, .banner{
+.navbar{
     max-width: 1240px;
     margin: 0 auto;
 }
@@ -31,7 +101,6 @@ nav ul li{
     max-width: 570px;
     max-height: 300px;
     margin: 0 auto;
-    margin-top: 160px;
 }
 .banner-img img{
     width: 100%;
@@ -54,6 +123,7 @@ nav ul li{
 .card{
     margin-top: 30px;
     text-align: center;
+     transition: transform 0.3s ease;
 }
 .card img{
     width: 100%;
@@ -81,6 +151,7 @@ nav ul li{
 }
 .flower-plants-img{
     position: relative;
+    margin-right: 40px;
 }
 .flower-plants-img img{
     width: 100%; 
@@ -93,10 +164,9 @@ nav ul li{
   z-index: 2; 
   transition: transform 0.5s ease ;
 }
-#badge:hover{
-    transform: rotate(360deg);
-  
-}
+
+
+
 /* deals-section-styles */
 .latest-deals{
     margin: 130px 150px;
@@ -148,6 +218,71 @@ nav ul li{
 .deal-text a , .zabo-text a{
     color: #FFFFFF;
 }
+
+
+/* input section styles */
+.input-section{
+    background-image: url(/assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 330px; 
+    background-size: cover;
+    text-align: center;
+    padding-top: 250px;
+
+}
+
+.subscribe-field{
+    display: flex;
+    justify-content: center;
+  align-items: center
+}
+.subscribe-field input[type="email"]{
+    width: 530px;
+    height: 30px;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+}
+.subscribe-field button {
+    width: 180px;
+  padding: 6px 10px;
+  height: 30px;
+  background-color: #E95A08;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  font-weight: 600;
+}
+/* footer styles */
+.footer-section{
+    display: flex;
+    max-width: 1440px;
+    margin: 80px 100px;
+    justify-content: space-around;
+}
+.website-info{
+    width: 350px;
+}
+.website-links{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.website-links ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+.website-links a {
+    text-decoration: none;
+
+}
+.website-social-links img {
+    margin-right: 20px;
+    display: inline;
+}
+
+
 @media screen and (max-width:576px){
     .nav-item{
         display: none;
@@ -191,5 +326,8 @@ nav ul li{
         top: 50px;
         left: 25px;
     }
+    .footer-section, .website-links{
+        flex-direction: column;
+}
 
 }
